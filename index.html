@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge AI Courses | Certification Exam Preparation (Claude, Azure, Nvidia)</title>
+  <meta name="description" content="Prepare for industry-leading AI certifications from Anthropic (Claude), Microsoft Azure, and NVIDIA. Accelerate your career with our hands-on curricula and expert-led modules.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo">
+        <div class="logo-icon">C</div>
+        <span>Cambridge AI</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><button class="btn btn-primary" onclick="openModal('General Registration')">Enroll Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">🚀 Level Up Your AI Credentials</span>
+      <h1>Master <span>AI Certifications</span> with Hands-On Expertise</h1>
+      <p>Pass elite exams from Claude, Azure, and NVIDIA. Learn step-by-step with practical labs, industry curriculum, and key results verification.</p>
+      <div class="hero-actions">
+        <a href="#curriculum" class="btn btn-primary">Explore Curriculum</a>
+        <a href="about.html" class="btn btn-secondary">Our Methodology</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Level Features -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Cambridge AI Prep?</h2>
+        <p>Our courses go beyond theory to provide real hands-on systems designed for production.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>Exam Focused</h3>
+          <p>Curriculums mapped directly to Microsoft AI-102, NVIDIA GenAI certifications, and Anthropic Claude mastery guidelines.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>100% Hands-On Labs</h3>
+          <p>Each module requires building running code. No passive reading—only real repository creation and active debugging.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Industry Alignment</h3>
+          <p>Build enterprise solutions with retrieval augmented generation (RAG), high-throughput Triton Serving, and guardrails.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section id="curriculum" class="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <h2>Choose Your Specialization Track</h2>
+        <p>Explore modules, learning objectives, and hands-on key results. Select a certification below to view detail.</p>
+      </div>
+
+      <!-- Tabs Navigation -->
+      <div class="curriculum-tabs">
+        <button class="tab-btn active" onclick="switchTab('claude')">
+          <span>Anthropic Claude Specialist</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('azure')">
+          <span>Azure AI Engineer (AI-102)</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('nvidia')">
+          <span>NVIDIA GenAI Developer</span>
+        </button>
+      </div>
+
+      <!-- Claude Tab Content -->
+      <div id="claude-content" class="curriculum-display active">
+        <div class="course-meta">
+          <div class="meta-item">
+            <span class="meta-label">Est. Duration</span>
+            <span class="meta-value">6 Weeks</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Difficulty</span>
+            <span class="meta-value">Intermediate</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Certification Target</span>
+            <span class="meta-value">Anthropic Certified Claude Professional</span>
+          </div>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="modules-list">
+            <!-- Module 1 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 1</span>
+                <span class="module-title">Advanced Prompt Engineering</span>
+              </div>
+              <p class="module-desc">Master structured outputs, context windows, and specific model instructions for Claude 3.5 Sonnet.</p>
+              <ul class="objectives-list">
+                <li>Learn XML tag optimization and prefill strategies to steer Claude's responses.</li>
+                <li>Implement few-shot learning and chain-of-thought prompts for complex reasoning.</li>
+                <li>Analyze system prompts vs. user prompts for safety and output reliability.</li>
+              </ul>
+            </div>
+            <!-- Module 2 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 2</span>
+                <span class="module-title">API & SDK Orchestration</span>
+              </div>
+              <p class="module-desc">Connect applications to Anthropic's Message API with enterprise performance.</p>
+              <ul class="objectives-list">
+                <li>Deploy streaming token pipelines for real-time user experiences.</li>
+                <li>Implement exponential backoff retry policies and exception handling.</li>
+                <li>Optimize token usage, cache management, and rate limit compliance.</li>
+              </ul>
+            </div>
+            <!-- Module 3 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 3</span>
+                <span class="module-title">Tool Use (Function Calling)</span>
+              </div>
+              <p class="module-desc">Equip Claude with external tools, APIs, and databases to perform automated actions.</p>
+              <ul class="objectives-list">
+                <li>Define robust JSON schemas for custom function definitions.</li>
+                <li>Design a loops-based agent flow that parses and executes tool calls.</li>
+                <li>Pass files (PDF, CSV) and handle multi-modal inputs.</li>
+              </ul>
+            </div>
+            <!-- Module 4 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 4</span>
+                <span class="module-title">Constitutional AI & Guardrails</span>
+              </div>
+              <p class="module-desc">Enforce safety protocols and system alignment using Constitutional AI principles.</p>
+              <ul class="objectives-list">
+                <li>Establish critique-and-revision pipelines to mitigate hallucinations.</li>
+                <li>Design boundary conditions for legal, ethical, and domain-specific rules.</li>
+                <li>Test robustness against jailbreaks and adversarial prompt injections.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hands-on & Readiness Simulator -->
+          <div class="hands-on-container">
+            <div class="hands-on-header">
+              <span class="hands-on-badge">Capstone Project</span>
+            </div>
+            <h3 class="hands-on-title">Claude Agent System</h3>
+            <p class="hands-on-desc">Construct a serverless support agent using Claude tool-use that connects to a live PostgreSQL DB, resolves customer queries, and critiques its own answer for safety before returning it.</p>
+            
+            <h4>Hands-on Key Results Checklist</h4>
+            <div class="key-results-checklist" data-course="claude">
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Configure a Claude Client instance with stream streaming and dynamic prompt cache tags.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Establish JSON tools parsing schemas for DB lookup queries.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Implement Constitutional Critique check preventing PII data leaks in the agent responses.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Pass integration tests with 95%+ success rate under load.</div>
+              </div>
+            </div>
+
+            <!-- Readiness tracker widget -->
+            <div class="tracker-box">
+              <div class="tracker-title">Claude Track Readiness Score</div>
+              <div class="progress-bar-container">
+                <div id="claude-progress" class="progress-bar"></div>
+              </div>
+              <div class="progress-label">
+                <span>Completed Key Results</span>
+                <span id="claude-score">0 / 4</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" onclick="openModal('Claude track')">Register for Claude Track</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Azure Tab Content -->
+      <div id="azure-content" class="curriculum-display">
+        <div class="course-meta">
+          <div class="meta-item">
+            <span class="meta-label">Est. Duration</span>
+            <span class="meta-value">8 Weeks</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Difficulty</span>
+            <span class="meta-value">Intermediate-Advanced</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Certification Target</span>
+            <span class="meta-value">Microsoft Certified: Azure AI Engineer (AI-102)</span>
+          </div>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="modules-list">
+            <!-- Module 1 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 1</span>
+                <span class="module-title">Azure OpenAI Provisioning & Deployment</span>
+              </div>
+              <p class="module-desc">Learn how to configure Azure OpenAI Service with enterprise firewalls and private endpoints.</p>
+              <ul class="objectives-list">
+                <li>Deploy models (GPT-4o, DALL-E 3) with custom TPM (Tokens per Minute) allocation.</li>
+                <li>Understand Azure RBAC security permissions and API Key rotation systems.</li>
+                <li>Configure networking, virtual networks, and logging with Azure Monitor.</li>
+              </ul>
+            </div>
+            <!-- Module 2 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 2</span>
+                <span class="module-title">Azure AI Search & Indexing</span>
+              </div>
+              <p class="module-desc">Implement vector search indexes with custom semantic rankers and chunking.</p>
+              <ul class="objectives-list">
+                <li>Create and configure vector indexes for multi-format text processing.</li>
+                <li>Build integrated skillsets using Azure AI Document Intelligence.</li>
+                <li>Implement hybrid search strategies (vector + semantic search).</li>
+              </ul>
+            </div>
+            <!-- Module 3 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 3</span>
+                <span class="module-title">Azure Cognitive Services Architecture</span>
+              </div>
+              <p class="module-desc">Design solutions utilizing Speech, Translation, Vision, and Language capabilities.</p>
+              <ul class="objectives-list">
+                <li>Set up real-time custom speech-to-text pipelines.</li>
+                <li>Implement image analysis, OCR, and object detection with Custom Vision.</li>
+                <li>Analyze text sentiment and extract key phrases at scale.</li>
+              </ul>
+            </div>
+            <!-- Module 4 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 4</span>
+                <span class="module-title">AI Solution Deployment & Security</span>
+              </div>
+              <p class="module-desc">Containerize AI workloads and secure endpoints using Azure API Management.</p>
+              <ul class="objectives-list">
+                <li>Deploy Azure AI Services on Docker containers at edge locations.</li>
+                <li>Set up rate-limiting, usage throttling, and billing alerts.</li>
+                <li>Implement Azure Content Safety to filter NSFW and toxic text/images.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hands-on & Readiness Simulator -->
+          <div class="hands-on-container">
+            <div class="hands-on-header">
+              <span class="hands-on-badge">Capstone Project</span>
+            </div>
+            <h3 class="hands-on-title">Enterprise Azure RAG</h3>
+            <p class="hands-on-desc">Develop a high-scale Retrieval-Augmented Generation system using Azure AI Search, Azure OpenAI, and Azure Blob Storage. Secure the entire architecture using Managed Identities.</p>
+            
+            <h4>Hands-on Key Results Checklist</h4>
+            <div class="key-results-checklist" data-course="azure">
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Provision Azure OpenAI models and authenticate using Azure DefaultCredential (RBAC).</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Configure AI Search index with hierarchical vector search configurations.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Build custom Document Intelligence pipeline to extract tabular values from PDFs.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Add Azure Content Safety filters to automatically reject toxic system inputs.</div>
+              </div>
+            </div>
+
+            <!-- Readiness tracker widget -->
+            <div class="tracker-box">
+              <div class="tracker-title">Azure Track Readiness Score</div>
+              <div class="progress-bar-container">
+                <div id="azure-progress" class="progress-bar"></div>
+              </div>
+              <div class="progress-label">
+                <span>Completed Key Results</span>
+                <span id="azure-score">0 / 4</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" onclick="openModal('Azure track')">Register for Azure Track</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nvidia Tab Content -->
+      <div id="nvidia-content" class="curriculum-display">
+        <div class="course-meta">
+          <div class="meta-item">
+            <span class="meta-label">Est. Duration</span>
+            <span class="meta-value">10 Weeks</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Difficulty</span>
+            <span class="meta-value">Advanced</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Certification Target</span>
+            <span class="meta-value">NVIDIA Certified Associate: GenAI Developer</span>
+          </div>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="modules-list">
+            <!-- Module 1 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 1</span>
+                <span class="module-title">Foundations of Accelerated Computing</span>
+              </div>
+              <p class="module-desc">Optimize model hosting environments and hardware setups using NVIDIA GPUs.</p>
+              <ul class="objectives-list">
+                <li>Analyze GPU architectures (Hopper, Blackwell) and memory constraints.</li>
+                <li>Understand CUDA programming fundamentals and PyTorch execution paths.</li>
+                <li>Configure NVIDIA Container Toolkit on Linux systems.</li>
+              </ul>
+            </div>
+            <!-- Module 2 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 2</span>
+                <span class="module-title">Model Compilation (TensorRT-LLM)</span>
+              </div>
+              <p class="module-desc">Compile LLMs (Llama-3, Mistral) for ultra-low latency inference using TensorRT-LLM.</p>
+              <ul class="objectives-list">
+                <li>Run quantization techniques (FP8, INT8, AWQ) to compress weight sizes.</li>
+                <li>Implement KV caching configurations to maximize concurrent user limits.</li>
+                <li>Run benchmark tests comparing baseline Hugging Face models vs. Compiled models.</li>
+              </ul>
+            </div>
+            <!-- Module 3 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 3</span>
+                <span class="module-title">Triton Inference Server Deployment</span>
+              </div>
+              <p class="module-desc">Deploy your compiled model in production with Triton multi-model pipeline architectures.</p>
+              <ul class="objectives-list">
+                <li>Create Triton model repository configurations with custom parameters.</li>
+                <li>Implement Dynamic Batching and concurrent model execution configurations.</li>
+                <li>Run performance analyzers (perf_analyzer) to optimize throughput limits.</li>
+              </ul>
+            </div>
+            <!-- Module 4 -->
+            <div class="module-item">
+              <div class="module-header">
+                <span class="module-tag">Module 4</span>
+                <span class="module-title">Orchestration & NeMo Guardrails</span>
+              </div>
+              <p class="module-desc">Add safety guardrails, topic alignments, and output verification systems using NeMo Guardrails.</p>
+              <ul class="objectives-list">
+                <li>Develop Colang flows defining conversational limits and redirection policies.</li>
+                <li>Integrate Milvus/FAISS databases with accelerated retriever microservices.</li>
+                <li>Test LLM latency and reliability under heavy simulation scripts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hands-on & Readiness Simulator -->
+          <div class="hands-on-container">
+            <div class="hands-on-header">
+              <span class="hands-on-badge">Capstone Project</span>
+            </div>
+            <h3 class="hands-on-title">Triton Production Stack</h3>
+            <p class="hands-on-desc">Compile Llama 3 using TensorRT-LLM with FP8 quantization, configure a model repository, run it on Triton Server with dynamic batching active, and implement NeMo Guardrails to control dialogue bounds.</p>
+            
+            <h4>Hands-on Key Results Checklist</h4>
+            <div class="key-results-checklist" data-course="nvidia">
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Compile Llama 3 model utilizing TensorRT-LLM command line tools.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Configure Triton `config.pbtxt` to enable dynamic batching scheduler.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Integrate NeMo Guardrails to reject off-topic questions.</div>
+              </div>
+              <div class="key-result-item" onclick="toggleResult(this)">
+                <div class="kr-checkbox"></div>
+                <div class="kr-text">Achieve under 60ms Time-to-First-Token (TTFT) metrics in local benchmark runs.</div>
+              </div>
+            </div>
+
+            <!-- Readiness tracker widget -->
+            <div class="tracker-box">
+              <div class="tracker-title">Nvidia Track Readiness Score</div>
+              <div class="progress-bar-container">
+                <div id="nvidia-progress" class="progress-bar"></div>
+              </div>
+              <div class="progress-label">
+                <span>Completed Key Results</span>
+                <span id="nvidia-score">0 / 4</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" onclick="openModal('Nvidia track')">Register for Nvidia Track</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <section class="container">
+    <div class="cta">
+      <h2>Ready to Secure Your AI Certification?</h2>
+      <p>Join a community of engineers who have passed their Claude, Azure, and Nvidia exams with hands-on capstone projects.</p>
+      <button class="btn btn-primary" onclick="openModal('General CTA')">Reserve Your Spot Today</button>
+    </div>
+  </section>
+
+  <!-- Registration Modal -->
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Request Course Details</h3>
+      <p>Submit your details to receive full syllabus schedules and details on hardware sandbox lab access.</p>
+      <form id="register-form" onsubmit="submitForm(event)">
+        <input type="hidden" id="selected-track" name="track" value="General">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Rifat Sahin" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" class="form-control" placeholder="rifat@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="experience">AI Experience Level</label>
+          <select id="experience" class="form-control">
+            <option value="beginner">Beginner (Under 1 year)</option>
+            <option value="intermediate">Intermediate (1-3 years)</option>
+            <option value="advanced">Advanced (3+ years)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Syllabus &amp; Lab Info</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Cambridge AI Courses</h4>
+          <p>High-performance curriculum for certification exam preparation.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Certification Tracks</h5>
+          <ul>
+            <li><a href="#curriculum" onclick="switchTab('claude')">Anthropic Claude</a></li>
+            <li><a href="#curriculum" onclick="switchTab('azure')">Microsoft Azure AI</a></li>
+            <li><a href="#curriculum" onclick="switchTab('nvidia')">NVIDIA GenAI</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="about.html">About Methodology</a></li>
+            <li><a href="about.html#faq">FAQ &amp; Cost</a></li>
+            <li><a href="about.html#contact">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Honor Code</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+          <a href="#">git</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching functionality
+    function switchTab(trackName) {
+      // Remove active class from all buttons and displays
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.curriculum-display').forEach(display => display.classList.remove('active'));
+
+      // Find the button and display corresponding to the selected track
+      const selectedBtn = Array.from(document.querySelectorAll('.tab-btn')).find(btn => 
+        btn.getAttribute('onclick').includes(trackName)
+      );
+      if (selectedBtn) {
+        selectedBtn.classList.add('active');
+      }
+
+      const selectedContent = document.getElementById(`${trackName}-content`);
+      if (selectedContent) {
+        selectedContent.classList.add('active');
+      }
+    }
+
+    // Interactive Key Results Checklist & Readiness tracker
+    function toggleResult(item) {
+      item.classList.toggle('checked');
+      
+      // Find parent container to identify the course
+      const checklist = item.parentElement;
+      const course = checklist.getAttribute('data-course');
+      
+      // Calculate new score
+      const totalItems = checklist.querySelectorAll('.key-result-item').length;
+      const checkedItems = checklist.querySelectorAll('.key-result-item.checked').length;
+      const scorePercent = (checkedItems / totalItems) * 100;
+      
+      // Update progress bar & label
+      const progressBar = document.getElementById(`${course}-progress`);
+      const scoreText = document.getElementById(`${course}-score`);
+      
+      if (progressBar && scoreText) {
+        progressBar.style.width = `${scorePercent}%`;
+        scoreText.innerText = `${checkedItems} / ${totalItems}`;
+      }
+    }
+
+    // Modal control
+    function openModal(trackName) {
+      const modal = document.getElementById('register-modal');
+      const hiddenInput = document.getElementById('selected-track');
+      const title = document.getElementById('modal-title');
+      
+      if (hiddenInput && title) {
+        hiddenInput.value = trackName;
+        title.innerText = `Request Details: ${trackName}`;
+      }
+      
+      if (modal) {
+        modal.classList.add('active');
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('register-modal');
+      if (modal) {
+        modal.classList.remove('active');
+      }
+    }
+
+    // Form Submission
+    function submitForm(event) {
+      event.preventDefault();
+      const track = document.getElementById('selected-track').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      
+      alert(`Thank you, ${name}! We have sent the syllabus & lab credentials for the ${track} to ${email}.`);
+      closeModal();
+      document.getElementById('register-form').reset();
+    }
+
+    // Close modal if clicked outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('register-modal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>

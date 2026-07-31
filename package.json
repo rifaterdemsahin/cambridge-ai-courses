@@ -1,0 +1,19 @@
+{
+  "name": "cambridge-ai-courses",
+  "version": "1.0.0",
+  "description": "Cambridge AI Courses - Preparation for AI Certification Exams",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y live-server --port=8080 --no-browser"
+  },
+  "keywords": [
+    "ai",
+    "courses",
+    "certification",
+    "claude",
+    "azure",
+    "nvidia"
+  ],
+  "author": "",
+  "license": "ISC"
+}

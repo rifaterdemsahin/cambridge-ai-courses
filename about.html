@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Cambridge AI Courses Methodology & Faculty</title>
+  <meta name="description" content="Discover the philosophy behind Cambridge AI Prep. Learn how our hands-on sandbox environments and key results tracking ensure student success in Claude, Azure, and Nvidia certification exams.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo-about">
+        <div class="logo-icon">C</div>
+        <span>Cambridge AI</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><button class="btn btn-primary" onclick="openModal('About Us Enroll')">Enroll Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="badge">Our Philosophy</span>
+      <h1>We Believe in <span>Proof, Not Promises</span></h1>
+      <p>Our educators design real-world sandboxes where students build, optimize, and secure deep learning systems to ace certification exams.</p>
+    </div>
+  </section>
+
+  <!-- Main About Content -->
+  <section class="about-details">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Our Core Methodology</h2>
+          <p>Too many courses rely on passive video watching. Cambridge AI Prep was built on a different thesis: you only understand an AI system when you have configured its network limits, debugged its rate limits, and run performance benchmarks under load.</p>
+          <p>Whether you're targeting Anthropic's Claude Specialist, Microsoft's Azure AI Engineer, or NVIDIA's GenAI developer certifications, our curricula require you to pass active integration test suites to earn your badge.</p>
+          
+          <div class="stat-grid">
+            <div class="stat-item">
+              <div class="stat-number">94%</div>
+              <div class="stat-label">Exam Pass Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">Sandbox Labs</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2.5k</div>
+              <div class="stat-label">Engineers Trained</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <div class="badge-float">Active Sandboxes</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-secondary);">Our Cloud Sandbox Architecture</h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;">Students receive exclusive access to our pre-provisioned cloud architecture templates:</p>
+          <ul style="list-style: none; padding-left: 0; font-size: 0.9rem; color: var(--text-secondary);">
+            <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;"><span style="color: var(--accent-tertiary);">✔</span> NVIDIA Hopper H100 Node slices for local server deployment.</li>
+            <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;"><span style="color: var(--accent-tertiary);">✔</span> Microsoft Azure Credits for private endpoint OpenAI deployments.</li>
+            <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;"><span style="color: var(--accent-tertiary);">✔</span> Dedicated Anthropic API developer keys for agent testing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors Section -->
+  <section class="instructors-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet the Instructors</h2>
+        <p>Our instructors are practicing systems engineers who work daily with foundational models.</p>
+      </div>
+      
+      <div class="instructor-grid">
+        <div class="instructor-card">
+          <div class="instructor-avatar">🧑‍💻</div>
+          <h3 class="instructor-name">Dr. Aris Thorne</h3>
+          <div class="instructor-title">Former NVIDIA Architect</div>
+          <p class="instructor-bio">Aris spent 5 years building performance compilers for deep neural networks. He leads our NVIDIA GenAI track.</p>
+        </div>
+        <div class="instructor-card">
+          <div class="instructor-avatar">👩‍💻</div>
+          <h3 class="instructor-name">Sarah Jenkins</h3>
+          <div class="instructor-title">Azure Solutions Principal</div>
+          <p class="instructor-bio">Sarah designs enterprise migrations for Fortune 100 banks. She runs the Azure AI Engineering curriculum.</p>
+        </div>
+        <div class="instructor-card">
+          <div class="instructor-avatar">🤖</div>
+          <h3 class="instructor-name">Marcus Vance</h3>
+          <div class="instructor-title">AI Research Lead</div>
+          <p class="instructor-bio">Marcus focuses on constitutional AI guardrails and large language model safety. He oversees our Claude track.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Cost Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about enrollment, hardware access, and certification target metrics.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--text-primary);">Do I need a GPU to take the NVIDIA Course?</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">No. We provide virtualized container access to NVIDIA H100 GPUs hosted in our private sandbox cloud. All compiler and server operations run directly in this environment.</p>
+        </div>
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--text-primary);">What is the cost structure?</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Each individual track is $499, which includes all sandbox cloud credits, api keys, and examination review vouchers. Enterprise team discounts are available.</p>
+        </div>
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--text-primary);">Are the certification exam costs included?</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Yes! If you successfully complete all hands-on capstone key results with a verified 100% score on our platform, we cover your Microsoft or NVIDIA official exam voucher.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" style="border-top: 1px solid var(--border-light);">
+    <div class="container" style="max-width: 600px; text-align: center;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Get In Touch</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem;">Have questions about custom curricula or corporate licensing? Contact our admissions office.</p>
+      <a href="mailto:admissions@cambridge.ai" class="btn btn-secondary">admissions@cambridge.ai</a>
+    </div>
+  </section>
+
+  <!-- Registration Modal -->
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Request Course Details</h3>
+      <p>Submit your details to receive full syllabus schedules and details on hardware sandbox lab access.</p>
+      <form id="register-form" onsubmit="submitForm(event)">
+        <input type="hidden" id="selected-track" name="track" value="General">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Rifat Sahin" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" class="form-control" placeholder="rifat@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="experience">AI Experience Level</label>
+          <select id="experience" class="form-control">
+            <option value="beginner">Beginner (Under 1 year)</option>
+            <option value="intermediate">Intermediate (1-3 years)</option>
+            <option value="advanced">Advanced (3+ years)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Syllabus &amp; Lab Info</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Cambridge AI Courses</h4>
+          <p>High-performance curriculum for certification exam preparation.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Certification Tracks</h5>
+          <ul>
+            <li><a href="index.html#curriculum">Anthropic Claude</a></li>
+            <li><a href="index.html#curriculum">Microsoft Azure AI</a></li>
+            <li><a href="index.html#curriculum">NVIDIA GenAI</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="about.html">About Methodology</a></li>
+            <li><a href="#faq">FAQ &amp; Cost</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Honor Code</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+          <a href="#">git</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Modal control
+    function openModal(trackName) {
+      const modal = document.getElementById('register-modal');
+      const hiddenInput = document.getElementById('selected-track');
+      const title = document.getElementById('modal-title');
+      
+      if (hiddenInput && title) {
+        hiddenInput.value = trackName;
+        title.innerText = `Request Details: ${trackName}`;
+      }
+      
+      if (modal) {
+        modal.classList.add('active');
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('register-modal');
+      if (modal) {
+        modal.classList.remove('active');
+      }
+    }
+
+    // Form Submission
+    function submitForm(event) {
+      event.preventDefault();
+      const track = document.getElementById('selected-track').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      
+      alert(`Thank you, ${name}! We have sent the syllabus & lab credentials for the ${track} to ${email}.`);
+      closeModal();
+      document.getElementById('register-form').reset();
+    }
+
+    // Close modal if clicked outside content
+    window.onclick = function(event) {
+      const modal = document.getElementById('register-modal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
