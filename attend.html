@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Your Interest | Cambridge AI Courses</title>
+  <meta name="description" content="Scan the poster QR code to register your interest in Cambridge AI Courses — hands-on certification prep for Claude, Azure, and NVIDIA, with weekend sessions available.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo">
+        <div class="logo-icon">C</div>
+        <span>Cambridge AI</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="business/index.html">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="window.location.href='index.html#curriculum'">Enroll Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="doc-hero">
+    <div class="container">
+      <span class="badge">📍 Cambridge &middot; Weekend Sessions Available</span>
+      <h1>Register Your <span>Interest</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">You scanned the Cambridge AI Courses poster &mdash; tell us a bit about yourself and we'll send you the syllabus, lab access details, and upcoming weekend cohort dates.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width: 560px;">
+      <div class="modal-content" style="width: 100%; max-width: none; transform: none; margin: 0 auto 3rem auto; box-shadow: none;">
+        <form id="attend-form" onsubmit="submitAttendForm(event)">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Rifat Sahin" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="track">Track of Interest</label>
+            <select id="track" class="form-control">
+              <option value="Claude">Claude (Anthropic)</option>
+              <option value="Azure">Azure AI Engineer</option>
+              <option value="NVIDIA">NVIDIA GenAI</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="availability">Preferred Session</label>
+            <select id="availability" class="form-control">
+              <option value="Weekend">Weekend</option>
+              <option value="Weekday evening">Weekday evening</option>
+              <option value="Either">Either</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send My Details</button>
+        </form>
+      </div>
+
+      <div class="doc-callout" style="text-align: center;">
+        <h4>Prefer to email us directly?</h4>
+        <p>Reach the team at <a href="mailto:info@pexabo.com" style="color: var(--accent-secondary);">info@pexabo.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function submitAttendForm(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const track = document.getElementById('track').value;
+      const availability = document.getElementById('availability').value;
+
+      const subject = encodeURIComponent('Cambridge AI Courses — Interest Registration');
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nTrack of interest: ${track}\nPreferred session: ${availability}\n\n(Sent from the Cambridge AI Courses poster sign-up page)`
+      );
+
+      window.location.href = `mailto:info@pexabo.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
