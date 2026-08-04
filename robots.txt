@@ -5,6 +5,5 @@ Disallow: /business/b2b-outreach.html
 Disallow: /business/pricing.html
 Disallow: /business/partnerships.html
 Disallow: /business/enterprise-pitch.html
-Disallow: /business/assets-liabilities-matrix.html
 Allow: /business/overview.html
 Allow: /
