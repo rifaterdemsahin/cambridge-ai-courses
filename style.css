@@ -985,6 +985,200 @@ footer {
   border-color: var(--accent-primary);
 }
 
+/* ==========================================================================
+   BUSINESS HUB / DOCUMENT PAGES
+   ========================================================================== */
+
+.doc-hero {
+  padding: 160px 0 60px 0;
+  text-align: center;
+}
+
+.doc-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.doc-breadcrumb {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.doc-breadcrumb a {
+  color: var(--accent-secondary);
+}
+
+.doc-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.doc-content h2 {
+  font-size: 1.8rem;
+  margin: 3rem 0 1rem 0;
+  color: var(--text-primary);
+}
+
+.doc-content h2:first-child {
+  margin-top: 0;
+}
+
+.doc-content h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.75rem 0;
+  color: var(--accent-secondary);
+}
+
+.doc-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.doc-content ul,
+.doc-content ol {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.doc-content li {
+  margin-bottom: 0.5rem;
+}
+
+.doc-content strong {
+  color: var(--text-primary);
+}
+
+.doc-content hr {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 3rem 0;
+}
+
+.doc-callout {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.doc-callout h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.doc-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 480px;
+}
+
+.doc-table th,
+.doc-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  text-align: left;
+  color: var(--text-secondary);
+}
+
+.doc-table th {
+  color: var(--text-primary);
+  font-weight: 600;
+  background: var(--bg-tertiary);
+}
+
+.email-step {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-step-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-secondary);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.email-step h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.email-subject {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.doc-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.doc-hub-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-hub-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.doc-hub-num {
+  font-size: 0.8rem;
+  color: var(--accent-secondary);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.doc-hub-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.doc-hub-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
 /* Animations */
 @keyframes slideDown {
   from { transform: translateY(-20px); opacity: 0; }

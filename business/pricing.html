@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing &amp; Scheduling Model | Cambridge AI Business Hub</title>
+  <meta name="description" content="Pricing strategy and budget proposal for hosting corporate events and workshops, with a dynamic pricing formula based on cohort size.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="../index.html" class="logo" id="header-logo">
+        <div class="logo-icon">C</div>
+        <span>Cambridge AI</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="index.html" class="active">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="window.location.href='../index.html#curriculum'">Enroll Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="doc-hero">
+    <div class="container">
+      <p class="doc-breadcrumb"><a href="index.html">Business Hub</a> / Document 03</p>
+      <span class="badge">Finance &amp; Operations</span>
+      <h1>Pricing <span>&amp; Scheduling Model</span></h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container doc-content">
+
+      <h2>Cost Inputs</h2>
+      <ul>
+        <li><strong>Base venue rate:</strong> £100 / hour</li>
+        <li><strong>Weekend day multiplier:</strong> Saturday &times;1.25, Sunday &times;1.35 (applied to the hourly venue rate)</li>
+        <li><strong>Lead-day surcharge:</strong> £50 / hour for a setup or prep day taken the day before the event (billed at 50% of the standard rate, since no live session runs)</li>
+        <li><strong>Trainer &amp; facilitation fee:</strong> £600 flat per day (lead instructor + assistant), +20% on Saturday/Sunday sessions</li>
+        <li><strong>Materials &amp; certification fee:</strong> £45 per participant &mdash; covers Digital Library access, workbooks, and the certification exam voucher</li>
+      </ul>
+
+      <h2>Dynamic Pricing Formula</h2>
+      <p>Cohorts run from 6 to 16 participants to preserve hands-on quality &mdash; above 16 we split into parallel cohorts rather than enlarging one room. Because venue and trainer costs are fixed per session, the per-participant price falls naturally as cohort size grows, with no manual discount table to maintain.</p>
+
+      <div class="doc-callout">
+        <h4>Venue Cost</h4>
+        <p><strong>V = (H &times; £100 &times; D) + L</strong></p>
+        <p>Where H = session hours, D = day multiplier (Weekday 1.0 / Saturday 1.25 / Sunday 1.35), and L = lead-day surcharge (£50 &times; lead-day hours, or £0 if no lead day is booked).</p>
+      </div>
+
+      <div class="doc-callout">
+        <h4>Total Program Fee</h4>
+        <p><strong>F(n) = V + T + (M &times; n)</strong></p>
+        <p>Where T = trainer &amp; facilitation fee (£600/day, +20% on weekends), M = £45 materials/certification fee per head, and n = cohort size (6&ndash;16).</p>
+      </div>
+
+      <div class="doc-callout">
+        <h4>Per-Participant Price</h4>
+        <p><strong>P(n) = F(n) / n</strong></p>
+        <p>The client-facing price per seat. Larger cohorts absorb the fixed venue and trainer costs across more people, so P(n) decreases as n rises from 6 to 16 &mdash; a built-in volume incentive without discretionary discounting.</p>
+      </div>
+
+      <h3>Worked Example A &mdash; Weekday Workshop (8 hours, no lead day)</h3>
+      <p>V = 8 &times; £100 &times; 1.0 = £800. T = £600. F(n) = £1,400 + (£45 &times; n).</p>
+      <div class="table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr><th>Cohort size (n)</th><th>Total Program Fee F(n)</th><th>Per-Participant Price P(n)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>6</td><td>£1,670</td><td>£278.33</td></tr>
+            <tr><td>8</td><td>£1,760</td><td>£220.00</td></tr>
+            <tr><td>10</td><td>£1,850</td><td>£185.00</td></tr>
+            <tr><td>12</td><td>£1,940</td><td>£161.67</td></tr>
+            <tr><td>14</td><td>£2,030</td><td>£145.00</td></tr>
+            <tr><td>16</td><td>£2,120</td><td>£132.50</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Worked Example B &mdash; Saturday Workshop (8 hours + 4-hour Friday lead day)</h3>
+      <p>V = (8 &times; £100 &times; 1.25) + (£50 &times; 4) = £1,000 + £200 = £1,200. T = £600 &times; 1.2 = £720. F(n) = £1,920 + (£45 &times; n).</p>
+      <div class="table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr><th>Cohort size (n)</th><th>Total Program Fee F(n)</th><th>Per-Participant Price P(n)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>6</td><td>£2,190</td><td>£365.00</td></tr>
+            <tr><td>10</td><td>£2,370</td><td>£237.00</td></tr>
+            <tr><td>16</td><td>£2,640</td><td>£165.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Corporate Packages (Reference for the 300-Person Program)</h2>
+      <p>Scaling to a 300-person corporate rollout is handled as parallel cohorts rather than one large session &mdash; roughly 19 cohorts of 16, run across weeks to match trainer availability and client scheduling. Package tiers below assume standard weekday delivery unless upgraded.</p>
+
+      <div class="table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr><th>Package</th><th>Cohort range</th><th>What's included</th><th>Indicative per-seat price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Starter Pilot</strong></td><td>6&ndash;10</td><td>Single cohort, one track, standard weekday delivery</td><td>£185&ndash;£280</td></tr>
+            <tr><td><strong>Growth</strong></td><td>2&ndash;5 cohorts</td><td>Multiple cohorts, mixed tracks, shared L&amp;D dashboard</td><td>£145&ndash;£220</td></tr>
+            <tr><td><strong>Enterprise (300-person)</strong></td><td>~19 cohorts of 16</td><td>Full rollout, bespoke curriculum, executive briefing add-on, dedicated account manager</td><td>£120&ndash;£165</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Budget Proposal Template</h2>
+      <p>For a client-facing budget line item, present the formula outputs as a simple three-line proposal:</p>
+      <div class="doc-callout">
+        <p><strong>Venue &amp; Facilities:</strong> V (per session, per the formula above)<br>
+        <strong>Facilitation:</strong> T (per session, weekday or weekend rate)<br>
+        <strong>Materials, Digital Library Access &amp; Certification:</strong> M &times; n<br>
+        <strong>Total Program Investment:</strong> F(n), or P(n) per participant for headcount-based budgeting</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
+        <a href="index.html" class="btn btn-secondary">&larr; Back to Business Hub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
