@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Onboarding &amp; Email Flow | Cambridge AI Business Hub</title>
   <meta name="description" content="Registration page copy for our Young Explorers track (ages 6-16) and the welcome email sequence from Free Trial to Paid subscription.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -21,9 +22,10 @@
         <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About Us</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
           <li><a href="../audiences.html">Audiences</a></li>
-          <li><a href="index.html" class="active">Business Hub</a></li>
-          <li><button class="btn btn-primary" onclick="window.location.href='../index.html#curriculum'">Enroll Now</button></li>
+          <li><a href="overview.html">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="window.location.href='../index.html#curriculum'">Download Full Syllabus</button></li>
         </ul>
       </nav>
     </div>
@@ -51,12 +53,17 @@
         <p><strong>Primary CTA button:</strong> "Start My Child's Free Trial" &nbsp;|&nbsp; <strong>Secondary CTA:</strong> "See What They'll Build"</p>
       </div>
 
+      <div class="doc-callout" style="border-color: #f59e0b;">
+        <h4>Fixed: Two Inaccurate Claims Removed From This Draft</h4>
+        <p>The original trust strip below claimed "Cambridge-affiliated educators" and "4.9/5 from 2,400+ parent reviews." Neither is true &mdash; we are not affiliated with the University of Cambridge (see <a href="../about.html">About</a>), and we don't have review data at our current program size. Replaced with accurate claims below. Do not reintroduce unverified numbers or institutional affiliation claims into live copy.</p>
+      </div>
+
       <h3>Trust Strip (directly under the hero)</h3>
       <ul>
-        <li>🔒 COPPA &amp; UK GDPR-compliant &mdash; built for young learners from day one</li>
+        <li>🔒 Built with COPPA &amp; UK GDPR requirements in mind from day one &mdash; see the Compliance &amp; Safety section below</li>
         <li>👨‍👩‍👧 Parent Dashboard included on every plan, free or paid</li>
-        <li>🎓 Curriculum designed with Cambridge-affiliated educators</li>
-        <li>⭐ 4.9/5 from 2,400+ parent reviews</li>
+        <li>🎓 Curriculum designed by our named, verifiable instructors &mdash; not an anonymous team</li>
+        <li>🌱 Founding 2026 cohort &mdash; early families get direct instructor access while we're small</li>
       </ul>
 
       <h3>Value Proposition Section</h3>
@@ -79,6 +86,7 @@
       </div>
 
       <h3>Social Proof</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">[PLACEHOLDER &mdash; illustrative copy only, not real quotes. Do not publish until replaced with an actual parent quote, collected with consent, from a real family in the program.]</p>
       <p><em>"My daughter went from 'what is AI' to building her own trivia bot in six weeks. She shows it to everyone."</em> &mdash; Parent of an 11-year-old Builder</p>
       <p><em>"The Published Portal was the moment it clicked for us &mdash; he had something real to be proud of, not just a completed badge."</em> &mdash; Parent of a 9-year-old Explorer</p>
 
@@ -93,9 +101,39 @@
         <p><strong>Form title:</strong> "Create Your Family Account"<br>
         <strong>Subtext:</strong> "Takes about 90 seconds. You'll set up your child's profile next."<br>
         <strong>Fields:</strong> Parent/Guardian Name &middot; Email &middot; Child's First Name &amp; Age &middot; Password<br>
+        <strong>Required consent checkbox (cannot submit without checking):</strong> "I am this child's parent or legal guardian, I am 18 or older, and I agree to the <a href="#compliance">Young Explorers Privacy &amp; Safety Terms</a> on my child's behalf."<br>
         <strong>Submit button:</strong> "Start the Free Trial &rarr;"<br>
         <strong>Microcopy under button:</strong> "You won't be charged today. We'll remind you 3 days before your trial ends."</p>
       </div>
+
+      <h3 id="compliance">Compliance &amp; Safety Disclosures (Draft &mdash; Pending Legal Review)</h3>
+      <div class="doc-callout" style="border-color: #f59e0b;">
+        <h4>Status</h4>
+        <p>This section is a first draft to unblock design and copy work. It must be reviewed by qualified legal counsel (UK GDPR / Children's Code, and COPPA if we accept US signups) before the Young Explorers track accepts a real signup.</p>
+      </div>
+
+      <h4>Parental Consent (shown at signup, before payment details)</h4>
+      <ul>
+        <li>Only a parent or legal guardian may create the account; the checkbox above must be checked to proceed, and we log the timestamp and IP of that consent alongside the account.</li>
+        <li>The account is registered to the parent/guardian's name and email &mdash; the child never logs in with their own email address, and we do not collect one for children under 13.</li>
+        <li>Parents can revoke consent and permanently delete their child's account and all associated project data at any time from the Parent Dashboard, or by emailing <a href="mailto:info@pexabo.com">info@pexabo.com</a>.</li>
+      </ul>
+
+      <h4>Age-Appropriate Privacy Disclosure (plain-language summary for parents)</h4>
+      <ul>
+        <li><strong>What we collect:</strong> the child's first name and age band (not full name, not date of birth), their project work, and usage activity needed to run the Digital Library and track progress. No location data, no third-party advertising trackers on child-facing pages.</li>
+        <li><strong>Published Portal is private-by-default:</strong> a project is only visible to people who have the specific share link the parent or child chooses to send &mdash; it is never publicly searchable or indexed, and there is no public discovery/browse feature exposing one child's work to strangers.</li>
+        <li><strong>No behavioral advertising to children:</strong> we do not run targeted ads on any page a logged-in child account can reach, and we do not sell or share children's data with third parties for marketing purposes.</li>
+        <li><strong>Data retention:</strong> if a trial or membership lapses, project data is retained for 90 days (so a family can resume) and then deleted, unless the parent requests earlier deletion.</li>
+      </ul>
+
+      <h4>Safety Guidelines</h4>
+      <ul>
+        <li>All AI interactions in the Explorers (6&ndash;10) and Builders (11&ndash;16) tracks run through the same content-safety filtering used in our adult tracks, tuned to reject age-inappropriate outputs rather than merely flagging them.</li>
+        <li>Human moderation review applies to anything published to a Portal before a share link becomes active for the under-13 age band.</li>
+        <li>Parents can access everything their child has created and every share link that's active, at any time, from the Parent Dashboard &mdash; there is no child-only content a parent cannot see.</li>
+        <li>A visible "Report" option is available next to any shared project or shared link, routed to a human, not an automated queue only.</li>
+      </ul>
 
       <h3>Final CTA Band (bottom of page)</h3>
       <p><strong>Headline:</strong> "The best time to start was yesterday. The second best time is today."<br>
@@ -160,6 +198,7 @@
 
   <footer>
     <div class="container">
+      <p class="footer-disclaimer">Cambridge AI Courses is an independent training provider. We are not affiliated with, endorsed by, sponsored by, or otherwise formally connected to the University of Cambridge or any of its constituent colleges. "Cambridge" in our name refers to our editorial standard, not an institutional affiliation.</p>
       <div class="footer-bottom" style="border-top: none; padding-top: 0;">
         <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
         <a href="index.html" class="btn btn-secondary">&larr; Back to Business Hub</a>

@@ -22,9 +22,10 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="audiences.html">Audiences</a></li>
-          <li><a href="business/index.html">Business Hub</a></li>
-          <li><button class="btn btn-primary" onclick="openModal('About Us Enroll')">Enroll Now</button></li>
+          <li><a href="business/overview.html">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="openModal('About Us Enroll')">Download Full Syllabus</button></li>
         </ul>
       </nav>
     </div>
@@ -50,18 +51,19 @@
           
           <div class="stat-grid">
             <div class="stat-item">
-              <div class="stat-number">94%</div>
-              <div class="stat-label">Exam Pass Rate</div>
+              <div class="stat-number">94%*</div>
+              <div class="stat-label">Target Certification Pass Rate</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">12+</div>
               <div class="stat-label">Sandbox Labs</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">2.5k</div>
-              <div class="stat-label">Engineers Trained</div>
+              <div class="stat-number"><a href="https://www.credly.com/badges/f189bfec-da01-463f-abb0-22b6e986d6d2/public_url" target="_blank" rel="noopener" style="color: inherit;">905</a></div>
+              <div class="stat-label">Verified Instructor Exam Score &mdash; <a href="https://www.credly.com/badges/f189bfec-da01-463f-abb0-22b6e986d6d2/public_url" target="_blank" rel="noopener">view credential</a></div>
             </div>
           </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">*Target pass rate, based on our capstone completion criteria. We're a young program &mdash; audited, cohort-by-cohort pass-rate data will be published here as our alumni network grows. The 905 score is a real, independently verifiable credential (click through to Credly), not a marketing estimate.</p>
         </div>
 
         <div class="about-image">
@@ -91,16 +93,34 @@
           <div class="instructor-avatar"><img src="images/instructors/rifat-erdem-sahin.png" alt="Rifat Erdem Sahin"></div>
           <h3 class="instructor-name">Rifat Erdem Sahin</h3>
           <div class="instructor-title">Admissions &amp; Core Architect</div>
-          <p class="instructor-bio">Rifat architects the platform's certification infrastructure and leads admissions across the Claude, Azure, and NVIDIA tracks.</p>
-          <a href="https://www.linkedin.com/in/rifaterdemsahin/" class="btn btn-secondary" style="margin-top: 1rem;" target="_blank" rel="noopener">LinkedIn Profile</a>
+          <p class="instructor-bio">Rifat architects the platform's certification infrastructure and leads admissions across the Claude, Azure, and NVIDIA tracks. He holds a verified Claude Certified Architect &ndash; Professional credential (score 905), the same certification standard the Claude track is built to prepare students for.</p>
+          <ul style="list-style: none; padding-left: 0; font-size: 0.85rem; color: var(--text-secondary); margin: 1rem 0; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li>&#127894; Claude Certified Architect &ndash; Professional (score 905) &mdash; <a href="https://www.credly.com/badges/f189bfec-da01-463f-abb0-22b6e986d6d2/public_url" target="_blank" rel="noopener">verify on Credly</a></li>
+          </ul>
+          <a href="https://www.linkedin.com/in/rifaterdemsahin/" class="btn btn-secondary" style="margin-top: 0.5rem;" target="_blank" rel="noopener">LinkedIn Profile</a>
         </div>
         <div class="instructor-card">
           <div class="instructor-avatar"><img src="images/instructors/marianna-nechypor.png" alt="Marianna Nechypor"></div>
           <h3 class="instructor-name">Marianna Nechypor</h3>
           <div class="instructor-title">Program Director &amp; Lead Educator</div>
-          <p class="instructor-bio">Marianna directs the curriculum and leads instruction across our Claude, Azure, and NVIDIA certification tracks.</p>
+          <p class="instructor-bio">Marianna directs the curriculum and leads instruction across our Claude, Azure, and NVIDIA certification tracks, shaping how each module maps to its underlying certification exam.</p>
           <a href="https://www.linkedin.com/in/mariannanechypor/" class="btn btn-secondary" style="margin-top: 1rem;" target="_blank" rel="noopener">LinkedIn Profile</a>
         </div>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1.5rem; text-align: center;">Instructor credentials and LinkedIn links are provided so you can verify them independently &mdash; we'd rather you check than take our word for it.</p>
+    </div>
+  </section>
+
+  <!-- Trust / Current Cohort Section -->
+  <section class="instructors-section" style="border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who's in the Room Right Now</h2>
+        <p>We're a young, cohort-based program &mdash; here's who's actually training with us this term, not stock testimonials.</p>
+      </div>
+      <div style="max-width: 700px; margin: 0 auto; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem; text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Our current cohort meets on live weekly calls. Regular attendees this term include <strong>Sude</strong>, <strong>Brian</strong>, and <strong>Bayo</strong>, working through the Claude and Azure tracks alongside our instructors.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">We're collecting written testimonials and outcome data from this cohort as they complete their tracks &mdash; check back as we publish verified results and, with their permission, their own words.</p>
       </div>
     </div>
   </section>
@@ -124,7 +144,7 @@
         </div>
         <div style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 12px; padding: 2rem;">
           <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--text-primary);">Are the certification exam costs included?</h3>
-          <p style="color: var(--text-secondary); font-size: 0.95rem;">Yes! If you successfully complete all hands-on capstone key results with a verified 100% score on our platform, we cover your Microsoft or NVIDIA official exam voucher.</p>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Yes! If you successfully complete all hands-on capstone key results with a verified 100% score on our platform, we cover your Microsoft or NVIDIA official exam voucher. <a href="terms.html#guarantee">See the full guarantee terms &amp; conditions &rarr;</a></p>
         </div>
       </div>
     </div>
@@ -190,18 +210,19 @@
             <li><a href="about.html">About Methodology</a></li>
             <li><a href="#faq">FAQ &amp; Cost</a></li>
             <li><a href="#contact">Contact Support</a></li>
-            <li><a href="business/index.html">Business Hub</a></li>
+            <li><a href="business/overview.html">Business Hub</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h5>Legal</h5>
           <ul>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
             <li><a href="#">Honor Code</a></li>
           </ul>
         </div>
       </div>
+      <p class="footer-disclaimer">Cambridge AI Courses is an independent training provider. We are not affiliated with, endorsed by, sponsored by, or otherwise formally connected to the University of Cambridge or any of its constituent colleges. "Cambridge" in our name refers to our editorial standard, not an institutional affiliation.</p>
       <div class="footer-bottom">
         <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
         <div class="footer-socials">
@@ -238,12 +259,32 @@
     }
 
     // Form Submission
-    function submitForm(event) {
+    const REGISTRATION_WEBHOOK_URL = 'https://n8n.rifaterdemsahin.com/webhook/cambridge-ai-registration';
+
+    async function submitForm(event) {
       event.preventDefault();
       const track = document.getElementById('selected-track').value;
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
-      
+      const experience = document.getElementById('experience').value;
+
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        await fetch(REGISTRATION_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, track, experience })
+        });
+      } catch (err) {
+        console.error('Registration request failed:', err);
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
       alert(`Thank you, ${name}! We have sent the syllabus & lab credentials for the ${track} to ${email}.`);
       closeModal();
       document.getElementById('register-form').reset();

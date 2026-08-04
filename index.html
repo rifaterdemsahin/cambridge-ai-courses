@@ -22,9 +22,10 @@
         <ul class="nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="audiences.html">Audiences</a></li>
-          <li><a href="business/index.html">Business Hub</a></li>
-          <li><button class="btn btn-primary" onclick="openModal('General Registration')">Enroll Now</button></li>
+          <li><a href="business/overview.html">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="openModal('General Registration')">Download Full Syllabus</button></li>
         </ul>
       </nav>
     </div>
@@ -449,8 +450,11 @@
   <section class="container">
     <div class="cta">
       <h2>Ready to Secure Your AI Certification?</h2>
-      <p>Join a community of engineers who have passed their Claude, Azure, and Nvidia exams with hands-on capstone projects.</p>
-      <button class="btn btn-primary" onclick="openModal('General CTA')">Reserve Your Spot Today</button>
+      <p>Join engineers working through the Claude, Azure, and Nvidia tracks with hands-on capstone projects.</p>
+      <div class="hero-actions" style="margin-top: 1.5rem;">
+        <button class="btn btn-primary" onclick="openModal('General CTA')">Download Full Syllabus</button>
+        <a href="mailto:info@pexabo.com?subject=15-Minute%20Advisory%20Call" class="btn btn-secondary">Book a 15-Min Advisory Call</a>
+      </div>
     </div>
   </section>
 
@@ -505,18 +509,19 @@
             <li><a href="about.html">About Methodology</a></li>
             <li><a href="about.html#faq">FAQ &amp; Cost</a></li>
             <li><a href="about.html#contact">Contact Support</a></li>
-            <li><a href="business/index.html">Business Hub</a></li>
+            <li><a href="business/overview.html">Business Hub</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h5>Legal</h5>
           <ul>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
             <li><a href="#">Honor Code</a></li>
           </ul>
         </div>
       </div>
+      <p class="footer-disclaimer">Cambridge AI Courses is an independent training provider. We are not affiliated with, endorsed by, sponsored by, or otherwise formally connected to the University of Cambridge or any of its constituent colleges. "Cambridge" in our name refers to our editorial standard, not an institutional affiliation.</p>
       <div class="footer-bottom">
         <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
         <div class="footer-socials">
@@ -596,12 +601,32 @@
     }
 
     // Form Submission
-    function submitForm(event) {
+    const REGISTRATION_WEBHOOK_URL = 'https://n8n.rifaterdemsahin.com/webhook/cambridge-ai-registration';
+
+    async function submitForm(event) {
       event.preventDefault();
       const track = document.getElementById('selected-track').value;
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
-      
+      const experience = document.getElementById('experience').value;
+
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        await fetch(REGISTRATION_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, track, experience })
+        });
+      } catch (err) {
+        console.error('Registration request failed:', err);
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalLabel;
       alert(`Thank you, ${name}! We have sent the syllabus & lab credentials for the ${track} to ${email}.`);
       closeModal();
       document.getElementById('register-form').reset();

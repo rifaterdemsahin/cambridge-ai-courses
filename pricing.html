@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Cambridge AI Courses</title>
+  <meta name="description" content="Track costs, inclusions, and payment options for the Claude, Azure AI, and NVIDIA GenAI certification tracks at Cambridge AI Courses.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="header-logo">
+        <div class="logo-icon">C</div>
+        <span>Cambridge AI</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
+          <li><a href="audiences.html">Audiences</a></li>
+          <li><a href="business/overview.html">Business Hub</a></li>
+          <li><button class="btn btn-primary" onclick="window.location.href='index.html#curriculum'">Download Full Syllabus</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="doc-hero">
+    <div class="container">
+      <span class="badge">Pricing</span>
+      <h1>One Price Per Track. <span>No Hidden Fees.</span></h1>
+      <p style="color: var(--text-secondary); max-width: 640px; margin: 0 auto; font-size: 1.1rem;">Each certification track is a flat $499, covering the full curriculum, sandbox cloud access, and exam preparation. Enterprise and team pricing is quoted separately.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container doc-content">
+
+      <h2>Compare the Three Tracks</h2>
+      <div class="table-wrap">
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Track</th>
+              <th>Duration</th>
+              <th>Level</th>
+              <th>Best For</th>
+              <th>Certification Target</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Anthropic Claude Specialist</strong></td>
+              <td>6 weeks</td>
+              <td>Intermediate</td>
+              <td>Engineers building LLM-backed products who want prompt engineering, tool use, and safety guardrails depth.</td>
+              <td>Anthropic Certified Claude Professional</td>
+              <td>$499</td>
+            </tr>
+            <tr>
+              <td><strong>Azure AI Engineer</strong></td>
+              <td>8 weeks</td>
+              <td>Intermediate&ndash;Advanced</td>
+              <td>Engineers working inside Microsoft-stack enterprises who need RAG, Cognitive Services, and secure deployment skills.</td>
+              <td>Microsoft Certified: Azure AI Engineer (AI-102)</td>
+              <td>$499</td>
+            </tr>
+            <tr>
+              <td><strong>NVIDIA GenAI Developer</strong></td>
+              <td>10 weeks</td>
+              <td>Advanced</td>
+              <td>Engineers deploying models at the infrastructure layer &mdash; compilation, inference serving, and performance tuning.</td>
+              <td>NVIDIA Certified Associate: GenAI Developer</td>
+              <td>$499</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Prerequisite level is a guide, not a gate &mdash; the modules build up from there, and you can start with our free syllabus download to gauge fit before enrolling.</p>
+
+      <h2>What's Included in the $499</h2>
+      <div class="features-grid" style="margin: 2rem 0;">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Full Curriculum</h3>
+          <p>All modules, hands-on key results checklists, and the capstone project brief for your track.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>Sandbox Cloud Access</h3>
+          <p>Provisioned cloud credits and API keys for the duration of the program &mdash; GPU nodes, Azure credits, or Anthropic API keys, depending on track.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>Exam Voucher Guarantee</h3>
+          <p>Complete your capstone with a verified 100% score and we cover your official Microsoft or NVIDIA exam voucher. <a href="terms.html#guarantee">Full terms &rarr;</a></p>
+        </div>
+      </div>
+
+      <h2>Payment Options</h2>
+      <ul>
+        <li><strong>Individuals:</strong> one-time payment of $499 per track at enrollment.</li>
+        <li><strong>Teams &amp; cohorts (6+ seats):</strong> volume pricing, quoted per cohort size. <a href="mailto:info@pexabo.com">Email us</a> or <a href="business/overview.html">visit the Business Hub</a> for corporate and institutional pricing.</li>
+        <li><strong>Refunds:</strong> full refund within 14 days if you haven't yet accessed sandbox lab credits. See our <a href="terms.html">Terms &amp; Conditions</a> for details.</li>
+      </ul>
+
+      <div class="doc-callout">
+        <h4>Not Ready to Buy Yet?</h4>
+        <p>Get the full syllabus first, or book a short call with an instructor before committing.</p>
+        <div class="hero-actions" style="margin-top: 1rem; justify-content: flex-start;">
+          <button class="btn btn-primary" onclick="openModal('Pricing Page Syllabus')">Download Full Syllabus</button>
+          <a href="mailto:info@pexabo.com?subject=15-Minute%20Advisory%20Call" class="btn btn-secondary">Book a 15-Min Advisory Call</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Registration Modal -->
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Request Course Details</h3>
+      <p>Submit your details to receive full syllabus schedules and details on hardware sandbox lab access.</p>
+      <form id="register-form" onsubmit="submitForm(event)">
+        <input type="hidden" id="selected-track" name="track" value="General">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Rifat Sahin" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" class="form-control" placeholder="rifat@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="experience">AI Experience Level</label>
+          <select id="experience" class="form-control">
+            <option value="beginner">Beginner (Under 1 year)</option>
+            <option value="intermediate">Intermediate (1-3 years)</option>
+            <option value="advanced">Advanced (3+ years)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Syllabus &amp; Lab Info</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Cambridge AI Courses</h4>
+          <p>High-performance curriculum for certification exam preparation.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Certification Tracks</h5>
+          <ul>
+            <li><a href="index.html#curriculum">Anthropic Claude</a></li>
+            <li><a href="index.html#curriculum">Microsoft Azure AI</a></li>
+            <li><a href="index.html#curriculum">NVIDIA GenAI</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="about.html">About Methodology</a></li>
+            <li><a href="about.html#faq">FAQ &amp; Cost</a></li>
+            <li><a href="business/overview.html">Business Hub</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="#">Honor Code</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">Cambridge AI Courses is an independent training provider. We are not affiliated with, endorsed by, sponsored by, or otherwise formally connected to the University of Cambridge or any of its constituent colleges. "Cambridge" in our name refers to our editorial standard, not an institutional affiliation.</p>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cambridge AI Courses. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="#">in</a>
+          <a href="#">tw</a>
+          <a href="#">git</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openModal(trackName) {
+      const modal = document.getElementById('register-modal');
+      const hiddenInput = document.getElementById('selected-track');
+      const title = document.getElementById('modal-title');
+      if (hiddenInput && title) {
+        hiddenInput.value = trackName;
+        title.innerText = `Request Details: ${trackName}`;
+      }
+      if (modal) modal.classList.add('active');
+    }
+    function closeModal() {
+      const modal = document.getElementById('register-modal');
+      if (modal) modal.classList.remove('active');
+    }
+    function submitForm(event) {
+      event.preventDefault();
+      const track = document.getElementById('selected-track').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      alert(`Thank you, ${name}! We have sent the syllabus & lab credentials for the ${track} to ${email}.`);
+      closeModal();
+      document.getElementById('register-form').reset();
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById('register-modal');
+      if (event.target === modal) closeModal();
+    }
+  </script>
+
+</body>
+</html>

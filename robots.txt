@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /business/index.html
+Disallow: /business/onboarding.html
+Disallow: /business/b2b-outreach.html
+Disallow: /business/pricing.html
+Disallow: /business/partnerships.html
+Disallow: /business/enterprise-pitch.html
+Allow: /business/overview.html
+Allow: /
